@@ -22,8 +22,11 @@ Requirements
 
 Setup in Colab
 1.Mount Google Drive: The script mounts Google Drive to load/save model weights.
+
 2.Set Environment Variables: Environment variables for Kaggle credentials are set for downloading datasets.
+
 3.Backend Selection: The script configures the Keras backend (e.g., JAX, TensorFlow, or PyTorch). For this tutorial, JAX is used with settings to avoid memory fragmentation.
+
 4.Install Dependencies: Ensure that Keras and KerasNLP are updated to the correct versions.
 
 Running the Notebook
