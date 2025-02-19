@@ -67,6 +67,7 @@ gemma_lm.fit(data, epochs=1, batch_size=1, callbacks=[WandbCallback()])
 Track model performance in real time through your Weights & Biases dashboard.
 
 Project Structure
+<pre lang="no-highlight"> ```
   project/
   ├── README.md                # Project overview, usage instructions, and background information (this file)
   ├── .gitignore               # Specifies files and directories to be ignored by Git
@@ -82,8 +83,8 @@ Project Structure
   │   └── my_gemma_lm_weights_mixed_precision_rank32.weights.h5
   └── notebooks/               # (Optional) Original Colab notebook files
       └── LoRA_gemma2_2b_en.ipynb
+``` </pre>
 
-Additional Information
 Documentation & References:
 
 [KerasNLP Documentation](https://keras.io/keras_hub/api/)
