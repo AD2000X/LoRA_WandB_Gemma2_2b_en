@@ -7,15 +7,15 @@ Overview:
 -Objective: Fine-tune a Gemma model (2B parameters) with LoRA to improve text generation performance on specific tasks.
 
 -Key Features:
-  -Mounting Google Drive to store and load model weights.
+  - Mounting Google Drive to store and load model weights.
   
-  -Environment variable configuration for Kaggle API credentials.
+  - Environment variable configuration for Kaggle API credentials.
   
-  -Downloading and preprocessing the Databricks Dolly 15k dataset.
+  * Downloading and preprocessing the Databricks Dolly 15k dataset.
   
-  -Fine-tuning with different LoRA ranks (4, 8, 16, 32) and mixed precision training.
+  = Fine-tuning with different LoRA ranks (4, 8, 16, 32) and mixed precision training.
   
-  -Integration with Weights & Biases for experiment tracking and logging.
+  + Integration with Weights & Biases for experiment tracking and logging.
 
 Requirements
 
