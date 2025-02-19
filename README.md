@@ -85,6 +85,7 @@ Project Structure
 
 Additional Information
 Documentation & References:
+
 [KerasNLP Documentation](https://keras.io/keras_hub/api/)
 
 [LoRA Tuning Example](https://keras.io/examples/nlp/parameter_efficient_finetuning_of_gpt2_with_lora/)
