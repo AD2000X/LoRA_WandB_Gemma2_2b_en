@@ -4,32 +4,32 @@ This repository provides a Colab-ready Python script for fine-tuning a GemmaCaus
 
 Overview:
 
--Objective: Fine-tune a Gemma model (2B parameters) with LoRA to improve text generation performance on specific tasks.
+Objective: Fine-tune a Gemma model (2B parameters) with LoRA to improve text generation performance on specific tasks.
 
--Key Features:
-  - Mounting Google Drive to store and load model weights.
+Key Features:
+  * Mounting Google Drive to store and load model weights.
   
-  - Environment variable configuration for Kaggle API credentials.
+  * Environment variable configuration for Kaggle API credentials.
   
   * Downloading and preprocessing the Databricks Dolly 15k dataset.
   
-  = Fine-tuning with different LoRA ranks (4, 8, 16, 32) and mixed precision training.
+  * Fine-tuning with different LoRA ranks (4, 8, 16, 32) and mixed precision training.
   
-  + Integration with Weights & Biases for experiment tracking and logging.
+  * Integration with Weights & Biases for experiment tracking and logging.
 
 Requirements
 
--Python: 3.7+
+Python: 3.7+
 
--Dependencies:
+Dependencies:
 
-  -Keras
+  * Keras
   
-  -KerasNLP
+  * KerasNLP
   
-  -Weights & Biases (wandb)
+  * Weights & Biases (wandb)
   
-  -Other libraries as specified in requirements.txt
+  * Other libraries as specified in requirements.txt
   
   Make sure to install these packages either via pip or by running the installation commands in the Colab notebook.
 
@@ -49,13 +49,13 @@ Running the Notebook:
 
 2.Execute each code cell sequentially to:
 
-  -Mount the drive.
+  * Mount the drive.
   
-  -Download and preprocess the dataset.
+  * Download and preprocess the dataset.
   
-  -Instantiate and fine-tune the Gemma model with LoRA.
+  * Instantiate and fine-tune the Gemma model with LoRA.
   
-  -Save the trained model weights back to Google Drive.
+  * Save the trained model weights back to Google Drive.
   
 3.Adjust parameters like the LoRA rank, batch size, or epochs as needed for your experiments.
 
