@@ -40,27 +40,27 @@ To track experiments with Weights & Biases, follow these steps:
 
 1.Install wandb:
 <pre lang="no-highlight"> ```
-  !pip install wandb 
+!pip install wandb 
 ```</pre>
 
 2.Initialize wandb in your script:
 At the beginning of the script (after imports), add:
 <pre lang="no-highlight"> ```
-  import wandb
-  wandb.init(project="gemma-lora-finetuning", entity="your_wandb_username")
+import wandb
+wandb.init(project="gemma-lora-finetuning", entity="your_wandb_username")
 ``` </pre>
 
 3.Log Hyperparameters and Metrics:
 During model training, log the loss and accuracy using a custom callback or by inserting logging calls in your training loop. For example:
 <pre lang="no-highlight"> ```
-  class WandbCallback(keras.callbacks.Callback):
-      def on_epoch_end(self, epoch, logs=None):
-          wandb.log(logs)
+class WandbCallback(keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs=None):
+        wandb.log(logs)
  ``` </pre>
 
 # Then include the callback in your model.fit call:
 <pre lang="no-highlight"> ```
-  gemma_lm.fit(data, epochs=1, batch_size=1, callbacks=[WandbCallback()])
+gemma_lm.fit(data, epochs=1, batch_size=1, callbacks=[WandbCallback()])
 ``` </pre>
 
 4.Monitor Training:
